@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%; /*1 rem equivale a 10px*/
+
+  --bg-color: rgba(197, 166, 138, 0.7);
+  --bg-title-color: #ebcaa5;
+
+  --title-main-color: #7e4e1b;
+  --subtitle: rgba(0, 0, 0, 0.7);
+  --title-color: #2D2C2A;
+  --color-text: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+
+  background: url(../images/bg.png) #3b2e24 no-repeat center;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+/* FONTS */
+
+h1,
+h2,
+h3,
+.price {
+  font-family: 'Roboto Serif', serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+/* HEADER */
+
+header {
+  padding: 3.2rem 0;
+  text-align: center;
+}
+
+header,
+section {
+  max-width: 30rem;
+  margin-inline: auto;
+}
+
+header h1 {
+  margin-bottom: 0.4rem;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  font-family: 'Righteous', cursive;
+}
+
+header h1 span {
+  color: var(--title-main-color);
+}
+
+header p {
+  color: var(--subtitle);
+}
+
+#container {
+  background-color: var(--bg-color);
+  margin-inline: auto;
+  width: 32rem;
+  border-radius: 20px;
+  margin-block: 2rem;
+  padding: 0.1rem 2rem;
+}
+
+/* SECTION */
+
+section {
+  margin-bottom: 2.4rem;
+}
+
+section h2 {
+  background-color: var(--bg-title-color);
+  padding: 0.8rem 1.6rem;
+  margin-bottom: 2.4rem;
+  border-radius: 2px;
+
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* LISTA */
+
+ul li {
+  display: flex;
+  gap: 6rem;
+
+  margin-bottom: 1.6rem;
+}
+
+li .details {
+  max-width: 24rem;
+}
+
+.details h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.details p {
+  color: var(--color-text);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+/* SCROLL */
+::-webkit-scrollbar-track {
+  background-color: #3b2e24;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #3b2e24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a18064;
+}
+
